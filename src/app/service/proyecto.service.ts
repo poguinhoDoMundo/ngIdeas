@@ -628,8 +628,6 @@ export class ProyectoService {
        return proyectos;
    }
 
-
-
 }
 
 export interface proyecto{
