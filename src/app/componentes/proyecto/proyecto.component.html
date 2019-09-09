@@ -1,0 +1,40 @@
+
+
+            <h1 class="text-center">{{proyecto.nombre}}</h1>
+
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <tbody>
+                      <tr>
+                          <td colspan="2" align="center">
+                              <i class="far fa-save fa-2x"></i>
+                              <i class="far fa-star regular fa-2x"></i>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><b>Objetivo</b></td>
+                          <td>{{ proyecto.objetivo  }}</td>
+                      </tr>
+
+                      <tr>
+                          <td><b>Descripcion</b></td>
+                          <td>{{ proyecto.descripcion  }}</td>
+                      </tr>
+
+                        <tr>
+                            <td><b>Requisitos</b></td>
+                            <td>{{proyecto.Requisitos}}</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Costo aproximado</b></td>
+                            <td>{{ proyecto.costo  }}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+    <div align="center">
+        <a [routerLink]="['/proyectos',factor]" target=_self class="btn btn-outline-primary">Volver</a>
+    </div>

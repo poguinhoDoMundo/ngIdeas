@@ -1,0 +1,25 @@
+<div class="card-columns">
+
+    <div class="card animated fadeIn fast" *ngFor="let proyecto of proyectos let i=index" >
+          <div class="card-body">
+              <h5 class="card-title">{{proyecto.nombre}}</h5>
+              <p class="card-text">{{proyecto.objetivo}}</p>
+
+              <p class="card-text">
+                <small class="text-muted">Propuesto por: {{proyecto.usuario}}</small>
+              </p>
+
+              <!--
+              <button type="submit" (click)="verHeroe(i)" class="btn btn-outline-primary btn-block">
+                  Ver proyectos ...
+              </button>
+
+              [routerLink]="['/hero',i]"
+              -->
+
+              <a  [routerLink]="['/proyecto',proyecto.id,factor]" class="btn btn-outline-primary btn-block">Ver mas...</a>
+
+            </div>
+    </div>
+
+</div>

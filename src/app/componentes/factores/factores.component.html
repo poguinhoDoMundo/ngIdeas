@@ -1,0 +1,22 @@
+
+<div class="card-columns">
+
+    <div class="card animated fadeIn fast" *ngFor="let factor of factores" >
+
+            <a [routerLink]="['/proyectos', factor.id]" >
+                <img class="card-img-top" [src]="factor.img" [alt]="factor.nombre">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">{{factor.nombre}}</h5>
+
+              <p class="card-text">
+                <small class="text-muted">
+                  {{ _proyectoService.contProyectosFactor( factor.id ) }}
+                  proyectos en este factor
+                </small>
+              </p>
+              
+            </div>
+    </div>
+
+</div>
